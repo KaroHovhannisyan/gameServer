@@ -9,4 +9,7 @@ MongoClient.connect("mongodb://gameByUs:gameByUs1995@ds215759.mlab.com:15759/gam
   app.listen(port, () => {
     console.log('We are live on ' + port);
   });               
+ app.get("/",function(req,res){
+  res.send("ok");
+ })
 })
